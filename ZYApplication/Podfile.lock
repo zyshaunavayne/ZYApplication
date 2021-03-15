@@ -1,0 +1,91 @@
+PODS:
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - Bugly (2.5.71)
+  - HXPhotoPicker (3.1.9):
+    - HXPhotoPicker/Default (= 3.1.9)
+  - HXPhotoPicker/Default (3.1.9)
+  - IQKeyboardManager (6.5.6)
+  - JCore (2.4.0)
+  - JPush (3.4.0):
+    - JCore (< 3.0.0, >= 2.0.0)
+  - MJRefresh (3.5.0)
+  - MMKV (1.2.7):
+    - MMKVCore (~> 1.2.7)
+  - MMKVCore (1.2.7)
+  - SDAutoLayout (2.2.1)
+  - SDCycleScrollView (1.82):
+    - SDWebImage (>= 5.0.0)
+  - SDWebImage (5.10.4):
+    - SDWebImage/Core (= 5.10.4)
+  - SDWebImage/Core (5.10.4)
+  - SVProgressHUD (2.2.5)
+  - TZImagePickerController (3.5.8)
+  - ZYGCDManager (0.0.4)
+
+DEPENDENCIES:
+  - AFNetworking
+  - Bugly
+  - HXPhotoPicker (~> 3.1.9)
+  - IQKeyboardManager
+  - JPush
+  - MJRefresh
+  - MMKV
+  - SDAutoLayout
+  - SDCycleScrollView
+  - SDWebImage (~> 5.0)
+  - SVProgressHUD
+  - TZImagePickerController
+  - ZYGCDManager
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - Bugly
+    - HXPhotoPicker
+    - IQKeyboardManager
+    - JCore
+    - JPush
+    - MJRefresh
+    - MMKV
+    - MMKVCore
+    - SDAutoLayout
+    - SDCycleScrollView
+    - SDWebImage
+    - SVProgressHUD
+    - TZImagePickerController
+    - ZYGCDManager
+
+SPEC CHECKSUMS:
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  Bugly: fd066c75c4a0eca1440f9b6a84bd37d51bfc85ac
+  HXPhotoPicker: e1816ff27f17c3926f6e83aebbb9f4b329324f0b
+  IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
+  JCore: a29e4b0ee54e1301446dc02d8e1c350404108b34
+  JPush: defaa108c38806f6efdcfaf4c416854d25fca8e5
+  MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
+  MMKV: 22e5136f7d00197bc0fc9694b7f71519f0d1ca12
+  MMKVCore: 607b7b05f2c2140056b5d338e45f2c14bf3f4232
+  SDAutoLayout: 8bf6b3bbc8b01f775d4defbb4fda2ace805461be
+  SDCycleScrollView: a0d74c3384caa72bdfc81470bdbc8c14b3e1fbcf
+  SDWebImage: c666b97e1fa9c64b4909816a903322018f0a9c84
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  TZImagePickerController: 7fd9702897ef8c0b7c951e5463f4bcf398296f9e
+  ZYGCDManager: 515c526c8cf78289b6de71a0e412c2047a30bf72
+
+PODFILE CHECKSUM: 3b18f89c70796961ef7589dfb464dcafba47a465
+
+COCOAPODS: 1.10.0
