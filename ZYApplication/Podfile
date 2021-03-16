@@ -3,7 +3,6 @@ platform :ios, '9.0'
 inhibit_all_warnings!
 target 'ZYApplication' do
   
-pod 'AFNetworking'
 pod 'SDWebImage', '~> 5.0'
 pod 'SVProgressHUD'
 pod 'SDAutoLayout'
@@ -13,8 +12,7 @@ pod 'JPush'
 pod 'SDCycleScrollView'
 pod 'HXPhotoPicker', '~> 3.1.9'
 pod 'MJRefresh'
-pod 'MMKV'
 pod 'ZYGCDManager'
 pod 'Bugly'
-
+#pod 'ZYNetWork'
 end

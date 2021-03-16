@@ -8,6 +8,10 @@
 
 #import "AppDelegate.h"
 #import "March.h"
+//登录页面
+#import "LoginViewController.h"
+//root
+#import "RootHomeTabBarController.h"
 
 @interface AppDelegate ()
 @end
@@ -17,6 +21,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [UIApplication sharedApplication].applicationIconBadgeNumber = 0;
+    
+    [self gotoMainVC];
+    
     return YES;
 }
 
@@ -27,18 +34,16 @@
 
 - (void)gotoMainVC
 {
-//    RootHomeViewController *rvc = [[RootHomeViewController alloc] init];
-//    [ZYSingleton shareSingleton].rootViewController = rvc;
-//    self.window.rootViewController = rvc;
-//    [self.window makeKeyAndVisible];
+    RootHomeTabBarController *rvc = RootHomeTabBarController.alloc.init;
+    self.window.rootViewController = rvc;
+    [self.window makeKeyAndVisible];
 }
 
 - (void)gotoLoginVC
 {
-//    LoginViewController *rvc = [[LoginViewController alloc] init];
-//    [ZYSingleton shareSingleton].rootViewController = rvc;
-//    self.window.rootViewController = rvc;
-//    [self.window makeKeyAndVisible];
+    LoginViewController *rvc = LoginViewController.alloc.init;
+    self.window.rootViewController = rvc;
+    [self.window makeKeyAndVisible];
 }
 
 //检测网络

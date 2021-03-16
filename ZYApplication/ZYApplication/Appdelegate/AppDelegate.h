@@ -9,11 +9,16 @@
 #import <UIKit/UIKit.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
-+ (AppDelegate *) shareInface;
-- (void)gotoMainVC;
-- (void)gotoLoginVC;
-@property (strong, nonatomic) UIWindow *window;
 
++ (AppDelegate *) shareInface;
+
+/// 去主页
+- (void)gotoMainVC;
+
+/// 去登录页面
+- (void)gotoLoginVC;
+
+@property (strong, nonatomic) UIWindow *window;
 
 @end
 

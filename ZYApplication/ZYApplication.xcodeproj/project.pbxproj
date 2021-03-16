@@ -12,6 +12,12 @@
 		1874998822B3A354003EEED4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1874998722B3A354003EEED4 /* Assets.xcassets */; };
 		1874998B22B3A354003EEED4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1874998922B3A354003EEED4 /* LaunchScreen.storyboard */; };
 		1874998E22B3A354003EEED4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1874998D22B3A354003EEED4 /* main.m */; };
+		2A604770260056390073C879 /* RootHomeTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A60476F260056390073C879 /* RootHomeTabBarController.m */; };
+		2A6047752600568F0073C879 /* NavBaseClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6047742600568F0073C879 /* NavBaseClassViewController.m */; };
+		2A60477C26008C810073C879 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A60477B26008C810073C879 /* LoginViewController.m */; };
+		2A60478326008E290073C879 /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A60478226008E290073C879 /* HomePageViewController.m */; };
+		2A60478726008E2F0073C879 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A60478626008E2F0073C879 /* MyViewController.m */; };
+		2A60478B260090BD0073C879 /* ZYNewWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A60478A260090BD0073C879 /* ZYNewWork.m */; };
 		2AE1214425FF625B009C280F /* BaseClassView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE1214325FF625B009C280F /* BaseClassView.m */; };
 		2AE1214925FF626A009C280F /* BaseClassModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE1214825FF626A009C280F /* BaseClassModel.m */; };
 		2AE1214D25FF6277009C280F /* BaseClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE1214C25FF6277009C280F /* BaseClassViewController.m */; };
@@ -58,6 +64,18 @@
 		1874998A22B3A354003EEED4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1874998C22B3A354003EEED4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1874998D22B3A354003EEED4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2A60476E260056390073C879 /* RootHomeTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootHomeTabBarController.h; sourceTree = "<group>"; };
+		2A60476F260056390073C879 /* RootHomeTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootHomeTabBarController.m; sourceTree = "<group>"; };
+		2A6047732600568F0073C879 /* NavBaseClassViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavBaseClassViewController.h; sourceTree = "<group>"; };
+		2A6047742600568F0073C879 /* NavBaseClassViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavBaseClassViewController.m; sourceTree = "<group>"; };
+		2A60477A26008C810073C879 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		2A60477B26008C810073C879 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		2A60478126008E290073C879 /* HomePageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomePageViewController.h; sourceTree = "<group>"; };
+		2A60478226008E290073C879 /* HomePageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomePageViewController.m; sourceTree = "<group>"; };
+		2A60478526008E2F0073C879 /* MyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
+		2A60478626008E2F0073C879 /* MyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
+		2A604789260090BD0073C879 /* ZYNewWork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYNewWork.h; sourceTree = "<group>"; };
+		2A60478A260090BD0073C879 /* ZYNewWork.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYNewWork.m; sourceTree = "<group>"; };
 		2AE1214225FF625B009C280F /* BaseClassView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseClassView.h; sourceTree = "<group>"; };
 		2AE1214325FF625B009C280F /* BaseClassView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseClassView.m; sourceTree = "<group>"; };
 		2AE1214725FF626A009C280F /* BaseClassModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseClassModel.h; sourceTree = "<group>"; };
@@ -163,6 +181,8 @@
 		1874997D22B3A350003EEED4 /* ZYApplication */ = {
 			isa = PBXGroup;
 			children = (
+				2A60477926008C710073C879 /* Home */,
+				2A60477826008C6A0073C879 /* Login */,
 				1874999422B3A45D003EEED4 /* Appdelegate */,
 				2AE1213325FF60B9009C280F /* Base */,
 				1874999522B3A499003EEED4 /* Other */,
@@ -191,6 +211,53 @@
 			path = Other;
 			sourceTree = "<group>";
 		};
+		2A60476D2600561A0073C879 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				2A60476E260056390073C879 /* RootHomeTabBarController.h */,
+				2A60476F260056390073C879 /* RootHomeTabBarController.m */,
+				2A6047732600568F0073C879 /* NavBaseClassViewController.h */,
+				2A6047742600568F0073C879 /* NavBaseClassViewController.m */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		2A60477826008C6A0073C879 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				2A60477A26008C810073C879 /* LoginViewController.h */,
+				2A60477B26008C810073C879 /* LoginViewController.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		2A60477926008C710073C879 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2A60478026008E1B0073C879 /* HomePage */,
+				2A60477F26008E190073C879 /* My */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		2A60477F26008E190073C879 /* My */ = {
+			isa = PBXGroup;
+			children = (
+				2A60478526008E2F0073C879 /* MyViewController.h */,
+				2A60478626008E2F0073C879 /* MyViewController.m */,
+			);
+			path = My;
+			sourceTree = "<group>";
+		};
+		2A60478026008E1B0073C879 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				2A60478126008E290073C879 /* HomePageViewController.h */,
+				2A60478226008E290073C879 /* HomePageViewController.m */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
 		2AE1213325FF60B9009C280F /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -208,6 +275,7 @@
 		2AE1213425FF610D009C280F /* BaseClass */ = {
 			isa = PBXGroup;
 			children = (
+				2A60476D2600561A0073C879 /* Root */,
 				2AE1216A25FF63DA009C280F /* WKWebViewViewController */,
 				2AE1214125FF622D009C280F /* UICollectionViewCell */,
 				2AE1214025FF6223009C280F /* UITableViewCell */,
@@ -260,6 +328,8 @@
 		2AE1213925FF618C009C280F /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				2A604789260090BD0073C879 /* ZYNewWork.h */,
+				2A60478A260090BD0073C879 /* ZYNewWork.m */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -655,22 +725,27 @@
 				2AE1220825FF86D1009C280F /* UILongPressGestureRecognizer+Runtime.m in Sources */,
 				2AE121D625FF8501009C280F /* NSArray+Runtime.m in Sources */,
 				2AE1223825FF940F009C280F /* FSActionSheet.m in Sources */,
+				2A604770260056390073C879 /* RootHomeTabBarController.m in Sources */,
 				2AE121EE25FF859A009C280F /* WKWebView+Runtime.m in Sources */,
 				2AE1223125FF940F009C280F /* UIView+XLExtension.m in Sources */,
 				2AE1223425FF940F009C280F /* XLPhotoBrowser.m in Sources */,
+				2A60478326008E290073C879 /* HomePageViewController.m in Sources */,
 				2AE121E625FF8580009C280F /* UIImage+Runtime.m in Sources */,
 				2AE1223025FF940F009C280F /* XLProgressView.m in Sources */,
 				2AE1223B25FF940F009C280F /* JXTAlertTools.m in Sources */,
 				2AE1223325FF940F009C280F /* XLZoomingScrollView.m in Sources */,
+				2A6047752600568F0073C879 /* NavBaseClassViewController.m in Sources */,
 				2AE121FD25FF8665009C280F /* NSMutableArray+Runtime.m in Sources */,
 				1874998E22B3A354003EEED4 /* main.m in Sources */,
 				2AE1214425FF625B009C280F /* BaseClassView.m in Sources */,
 				2AE1215625FF62C0009C280F /* BaseClassCollectionViewCell.m in Sources */,
+				2A60478726008E2F0073C879 /* MyViewController.m in Sources */,
 				2AE1223225FF940F009C280F /* UIImage+XLExtension.m in Sources */,
 				2AE1223725FF940F009C280F /* FSActionSheetConfig.m in Sources */,
 				2AE121D225FF84F6009C280F /* NSDictionary+Runtime.m in Sources */,
 				1874998022B3A350003EEED4 /* AppDelegate.m in Sources */,
 				2AE121CE25FF8426009C280F /* NSString+Runtime.m in Sources */,
+				2A60478B260090BD0073C879 /* ZYNewWork.m in Sources */,
 				2AE1214D25FF6277009C280F /* BaseClassViewController.m in Sources */,
 				2AE1223A25FF940F009C280F /* FSActionSheetItem.m in Sources */,
 				2AE1223925FF940F009C280F /* FSActionSheetCell.m in Sources */,
@@ -681,6 +756,7 @@
 				2AE1215125FF62AA009C280F /* BaseClassTableViewCell.m in Sources */,
 				2AE121DE25FF8570009C280F /* UILabel+Runtime.m in Sources */,
 				2AE121F825FF865C009C280F /* NSMutableDictionary+Runtime.m in Sources */,
+				2A60477C26008C810073C879 /* LoginViewController.m in Sources */,
 				2AE121EA25FF858D009C280F /* UIImageView+Runtime.m in Sources */,
 				2AE1214925FF626A009C280F /* BaseClassModel.m in Sources */,
 				2AE121E225FF8578009C280F /* UIView+Runtime.m in Sources */,

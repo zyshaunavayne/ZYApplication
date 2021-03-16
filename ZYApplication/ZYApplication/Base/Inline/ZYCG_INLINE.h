@@ -197,4 +197,70 @@ CG_INLINE void delayedOperation(id parent, NSString *selectorName, CGFloat time)
     [parent performSelector:NSSelectorFromString(selectorName) withObject:nil afterDelay:time];
 }
 
+/// 字体大小 8
+CG_INLINE UIFont *fontsize_8()
+{
+    return [UIFont systemFontOfSize:8.0f];
+}
+
+/// 字体大小 9
+CG_INLINE UIFont *fontsize_9()
+{
+    return [UIFont systemFontOfSize:9.0f];
+}
+
+/// 字体大小 10
+CG_INLINE UIFont *fontsize_10()
+{
+    return [UIFont systemFontOfSize:10.0f];
+}
+
+/// 字体大小 11
+CG_INLINE UIFont *fontsize_11()
+{
+    return [UIFont systemFontOfSize:11.0f];
+}
+
+/// 字体大小 12
+CG_INLINE UIFont *fontsize_12()
+{
+    return [UIFont systemFontOfSize:12.0f];
+}
+
+/// 字体大小 13
+CG_INLINE UIFont *fontsize_13()
+{
+    return [UIFont systemFontOfSize:13.0f];
+}
+
+/// 字体大小 14
+CG_INLINE UIFont *fontsize_14()
+{
+    return [UIFont systemFontOfSize:14.0f];
+}
+
+/// 字体大小 15
+CG_INLINE UIFont *fontsize_15()
+{
+    return [UIFont systemFontOfSize:15.0f];
+}
+
+/// 字体大小 16
+CG_INLINE UIFont *fontsize_16()
+{
+    return [UIFont systemFontOfSize:16.0f];
+}
+
+/// 字体大小 17
+CG_INLINE UIFont *fontsize_17()
+{
+    return [UIFont systemFontOfSize:17.0f];
+}
+
+/// 字体大小 18
+CG_INLINE UIFont *fontsize_18()
+{
+    return [UIFont systemFontOfSize:18.0f];
+}
+
 #endif /* ZYCG_INLINE_h */

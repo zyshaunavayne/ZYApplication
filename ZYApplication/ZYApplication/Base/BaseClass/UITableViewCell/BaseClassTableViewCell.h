@@ -12,6 +12,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface BaseClassTableViewCell : UITableViewCell
 
+/// 禁止tableView滑动时跳动
+/// @param tableView tableView
+- (void)tableViewNoJump:(UITableView *)tableView;
+
 @end
 
 NS_ASSUME_NONNULL_END

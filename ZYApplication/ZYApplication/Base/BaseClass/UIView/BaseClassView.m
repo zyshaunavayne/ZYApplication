@@ -10,4 +10,20 @@
 
 @implementation BaseClassView
 
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        self.backgroundColor = UIColor.whiteColor;        
+    }
+    return self;
+}
+
+- (void)tableViewNoJump:(UITableView *)tableView
+{
+    tableView.estimatedRowHeight = 0;
+    tableView.estimatedSectionFooterHeight = 0;
+    tableView.estimatedSectionHeaderHeight = 0;
+}
+
 @end
