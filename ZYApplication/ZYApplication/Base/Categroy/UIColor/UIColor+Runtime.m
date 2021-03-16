@@ -99,4 +99,14 @@
     return [self R:87 G:146 B:253];
 }
 
++ (UIColor *)Text_Black
+{
+    return [self RGB:51];
+}
+
++ (UIColor *)Text_Gray
+{
+    return [self RGB:153];
+}
+
 @end

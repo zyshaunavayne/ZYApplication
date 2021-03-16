@@ -28,6 +28,7 @@
 #import "UIView+Runtime.h"
 #import "UILabel+Runtime.h"
 #import "UIButton+Runtime.h"
+#import "UITextField+Runtime.h"
 #import "NSArray+Runtime.h"
 #import "NSMutableArray+Runtime.h"
 #import "NSDictionary+Runtime.h"
@@ -40,17 +41,13 @@
 #import "JXTAlertTools.h"
 #import <SVProgressHUD.h>
 
+//细节处理
+#import "ZYDetaileProcessing.h"
+
 #define weak_self __weak typeof(self) weakSelf = self;
 #define Strong_Self __strong typeof(self) strongSelf = self;
 #define set_NSMutableDictionary NSMutableDictionary *proDic = [[NSMutableDictionary alloc] init];
 #define weak_self__set_NSMutableDictionary weak_self set_NSMutableDictionary
-
-/*
- UIImage 图片名/本地路径/URL
- */
-#define IMAGE_NAME(name) [UIImage imageNamed:name]
-#define IMAGE_PATH(path) [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:path ofType:nil]]
-#define IMAGE_URL(url) [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:url]]]
 
 #ifdef DEBUG
 #define DLog(s, ...) printf("class: <%p %s:(%d) > method: %s \n%s\n", self, [[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, __PRETTY_FUNCTION__, [[NSString stringWithFormat:(s), ##__VA_ARGS__] UTF8String] )

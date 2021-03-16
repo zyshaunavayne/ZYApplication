@@ -52,6 +52,11 @@ NS_ASSUME_NONNULL_BEGIN
 /// 主题颜色 87.146.253 1.0
 + (UIColor *)Text_Theme;
 
+/// 黑色字体 51.51.511.0
++ (UIColor *)Text_Black;
+
+/// 黑色字体 153.153.153 1.0
++ (UIColor *)Text_Gray;
 
 @end
 

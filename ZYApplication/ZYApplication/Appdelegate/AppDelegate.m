@@ -19,9 +19,13 @@
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+
     [UIApplication sharedApplication].applicationIconBadgeNumber = 0;
     
+    //设置根控制器
     [self gotoMainVC];
     
     return YES;
@@ -44,39 +48,6 @@
     LoginViewController *rvc = LoginViewController.alloc.init;
     self.window.rootViewController = rvc;
     [self.window makeKeyAndVisible];
-}
-
-//检测网络
-- (void)checkNewWork
-{
-//    [[AFNetworkReachabilityManager sharedManager] startMonitoring];
-//    [[AFNetworkReachabilityManager sharedManager ] setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
-//        switch (status) {
-//            case -1:
-//                [ZYSingleton shareSingleton].networkType = @"0";
-//                break;
-//            case 0:
-//                [SVProgressHUD showErrorWithStatus:@"未连接网络"];
-//                [ZYSingleton shareSingleton].networkType = @"-1";
-//                break;
-//            case 1:
-//                [ZYSingleton shareSingleton].networkType = @"1";
-//                break;
-//            case 2:
-//                [ZYSingleton shareSingleton].networkType = @"2";
-//                break;
-//            default:
-//                break;
-//        }
-//        if(status == AFNetworkReachabilityStatusReachableViaWWAN || status == AFNetworkReachabilityStatusReachableViaWiFi)
-//        {
-//            NSLog(@"有网");
-//        }else{
-//            [ZYSingleton shareSingleton].networkType = @"-1";
-//            [SVProgressHUD showErrorWithStatus:@"未连接网络"];
-//            return ;
-//        }
-//    }];
 }
 
 /// 设置键盘
