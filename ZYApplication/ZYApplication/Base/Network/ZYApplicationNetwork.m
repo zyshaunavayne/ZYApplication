@@ -28,14 +28,14 @@
         NSMutableArray *array = NSMutableArray.new;
         ZYIPManagerModel *model1 = ZYIPManagerModel.alloc.init;
         model1.name = @"正式环境";
-        model1.url = @"http://gateway.shigongbang.com/sgb-app-ios";
-        model1.select = 0;
+        model1.url = @"http://cityrecord.ibtop.cn:18085/city_record";
+        model1.select = 1;
         [array addObject:model1.toDictionary];
         
         ZYIPManagerModel *model2 = ZYIPManagerModel.alloc.init;
         model2.name = @"测试环境";
-        model2.url = @"http://gateway.shigongbang.com/sgb-app-pre";
-        model2.select = 1;
+        model2.url = @"http://cityrecord.ibtop.cn:18085/city_record";
+        model2.select = 0;
         [array addObject:model2.toDictionary];
     
         for (NSDictionary *obj in array) {

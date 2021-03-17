@@ -17,7 +17,6 @@
 NSString *const kZYIPManagerModelName = @"name";
 NSString *const kZYIPManagerModelSelect = @"select";
 NSString *const kZYIPManagerModelUrl = @"url";
-NSString *const kZYIPManagerModelQGBUrl = @"qgbUrl";
 
 @interface ZYIPManagerModel ()
 @end
@@ -43,9 +42,6 @@ NSString *const kZYIPManagerModelQGBUrl = @"qgbUrl";
     if(![dictionary[kZYIPManagerModelUrl] isKindOfClass:[NSNull class]]){
         self.url = dictionary[kZYIPManagerModelUrl];
     }
-    if(![dictionary[kZYIPManagerModelQGBUrl] isKindOfClass:[NSNull class]]){
-        self.qgbUrl = dictionary[kZYIPManagerModelQGBUrl];
-    }
     return self;
 }
 
@@ -62,9 +58,6 @@ NSString *const kZYIPManagerModelQGBUrl = @"qgbUrl";
     dictionary[kZYIPManagerModelSelect] = @(self.select);
     if(self.url != nil){
         dictionary[kZYIPManagerModelUrl] = self.url;
-    }
-    if(self.qgbUrl != nil){
-        dictionary[kZYIPManagerModelQGBUrl] = self.qgbUrl;
     }
     return dictionary;
 
@@ -85,9 +78,6 @@ NSString *const kZYIPManagerModelQGBUrl = @"qgbUrl";
     if(self.url != nil){
         [aCoder encodeObject:self.url forKey:kZYIPManagerModelUrl];
     }
-    if(self.qgbUrl != nil){
-        [aCoder encodeObject:self.qgbUrl forKey:kZYIPManagerModelQGBUrl];
-    }
 }
 
 /**
@@ -99,7 +89,6 @@ NSString *const kZYIPManagerModelQGBUrl = @"qgbUrl";
     self.name = [aDecoder decodeObjectForKey:kZYIPManagerModelName];
     self.select = [[aDecoder decodeObjectForKey:kZYIPManagerModelSelect] integerValue];
     self.url = [aDecoder decodeObjectForKey:kZYIPManagerModelUrl];
-    self.qgbUrl = [aDecoder decodeObjectForKey:kZYIPManagerModelQGBUrl];
     return self;
 
 }
@@ -114,7 +103,6 @@ NSString *const kZYIPManagerModelQGBUrl = @"qgbUrl";
     copy.name = [self.name copy];
     copy.select = self.select;
     copy.url = [self.url copy];
-    copy.qgbUrl = [self.qgbUrl copy];
 
     return copy;
 }

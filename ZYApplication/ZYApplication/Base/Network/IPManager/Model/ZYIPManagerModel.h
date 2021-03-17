@@ -12,8 +12,7 @@
 
 @property (nonatomic, strong) NSString * name;
 @property (nonatomic, assign) NSInteger select;
-@property (nonatomic, strong) NSString * url; //经营帮App主地址
-@property (nonatomic, strong) NSString * qgbUrl; //企管邦App主地址
+@property (nonatomic, strong) NSString * url; 
 
 -(instancetype)initWithDictionary:(NSDictionary *)dictionary;
 
