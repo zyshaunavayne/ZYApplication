@@ -14,5 +14,6 @@ pod 'HXPhotoPicker', '~> 3.1.9'
 pod 'MJRefresh'
 pod 'ZYGCDManager'
 pod 'Bugly'
-#pod 'ZYNetWork'
+pod 'ZYApplicationNetWork'
+
 end
