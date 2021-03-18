@@ -44,6 +44,16 @@
 //细节处理
 #import "ZYDetaileProcessing.h"
 
+//网络请求
+#import "ZYApplicationNetwork.h"
+
+//单例
+#import "ZYSingleton.h"
+
+//内联函数
+#import "ZYCG_INLINE.h"
+
+
 #define weak_self __weak typeof(self) weakSelf = self;
 #define Strong_Self __strong typeof(self) strongSelf = self;
 #define set_NSMutableDictionary NSMutableDictionary *proDic = [[NSMutableDictionary alloc] init];
@@ -56,8 +66,6 @@
 #define DLog(...)
 #define NSLog(...)
 #endif
-
-#import "ZYCG_INLINE.h"
 
 #endif /* March_h */
 

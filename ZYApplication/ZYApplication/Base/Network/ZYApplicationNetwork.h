@@ -6,11 +6,12 @@
 //  Copyright © 2021 zhangyu. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "ZYNetWorkBaseRequestBlock.h"
+#import "ZYCG_INLINE.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ZYApplicationNetwork : NSObject
+@interface ZYApplicationNetwork : ZYNetWorkBaseRequestBlock
 
 /// 获取项目服务器地址
 + (void)getMainAddress;

@@ -12,6 +12,7 @@
 		1874998822B3A354003EEED4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1874998722B3A354003EEED4 /* Assets.xcassets */; };
 		1874998B22B3A354003EEED4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1874998922B3A354003EEED4 /* LaunchScreen.storyboard */; };
 		1874998E22B3A354003EEED4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1874998D22B3A354003EEED4 /* main.m */; };
+		2A29E33526036CC200ADABDD /* ZYSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A29E33426036CC200ADABDD /* ZYSingleton.m */; };
 		2A604770260056390073C879 /* RootHomeTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A60476F260056390073C879 /* RootHomeTabBarController.m */; };
 		2A6047752600568F0073C879 /* NavBaseClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6047742600568F0073C879 /* NavBaseClassViewController.m */; };
 		2A60477C26008C810073C879 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A60477B26008C810073C879 /* LoginViewController.m */; };
@@ -72,6 +73,8 @@
 		1874998A22B3A354003EEED4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1874998C22B3A354003EEED4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1874998D22B3A354003EEED4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2A29E33326036CC200ADABDD /* ZYSingleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYSingleton.h; sourceTree = "<group>"; };
+		2A29E33426036CC200ADABDD /* ZYSingleton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYSingleton.m; sourceTree = "<group>"; };
 		2A60476E260056390073C879 /* RootHomeTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootHomeTabBarController.h; sourceTree = "<group>"; };
 		2A60476F260056390073C879 /* RootHomeTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootHomeTabBarController.m; sourceTree = "<group>"; };
 		2A6047732600568F0073C879 /* NavBaseClassViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavBaseClassViewController.h; sourceTree = "<group>"; };
@@ -235,6 +238,15 @@
 			path = Other;
 			sourceTree = "<group>";
 		};
+		2A29E33226036CB800ADABDD /* ZYSingleton */ = {
+			isa = PBXGroup;
+			children = (
+				2A29E33326036CC200ADABDD /* ZYSingleton.h */,
+				2A29E33426036CC200ADABDD /* ZYSingleton.m */,
+			);
+			path = ZYSingleton;
+			sourceTree = "<group>";
+		};
 		2A60476D2600561A0073C879 /* Root */ = {
 			isa = PBXGroup;
 			children = (
@@ -339,8 +351,8 @@
 			isa = PBXGroup;
 			children = (
 				183A71BC22BA7B6900069CF1 /* March.h */,
+				2A29E33226036CB800ADABDD /* ZYSingleton */,
 				2AA7908C2600B837008D7E63 /* ZYDetaileProcessing */,
-				2AE1213A25FF61CB009C280F /* Singleton */,
 				2AE1213925FF618C009C280F /* Network */,
 				2AE1213825FF6185009C280F /* Inline */,
 				2AE1213625FF6159009C280F /* Depends */,
@@ -412,13 +424,6 @@
 				2AA790752600B6EB008D7E63 /* IPManager */,
 			);
 			path = Network;
-			sourceTree = "<group>";
-		};
-		2AE1213A25FF61CB009C280F /* Singleton */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Singleton;
 			sourceTree = "<group>";
 		};
 		2AE1213C25FF6204009C280F /* UIView */ = {
@@ -815,6 +820,7 @@
 				2AA790732600B4CB008D7E63 /* ZYApplicationNetwork.m in Sources */,
 				2A60478326008E290073C879 /* HomePageViewController.m in Sources */,
 				2AE121E625FF8580009C280F /* UIImage+Runtime.m in Sources */,
+				2A29E33526036CC200ADABDD /* ZYSingleton.m in Sources */,
 				2AA790892600B6EB008D7E63 /* ZYIPManagerViewController.m in Sources */,
 				2AE1223025FF940F009C280F /* XLProgressView.m in Sources */,
 				2AE1223B25FF940F009C280F /* JXTAlertTools.m in Sources */,

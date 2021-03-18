@@ -25,6 +25,9 @@
 
     [UIApplication sharedApplication].applicationIconBadgeNumber = 0;
     
+    //配置服务器
+    [ZYApplicationNetwork getMainAddress];
+    
     //设置根控制器
     [self gotoMainVC];
     

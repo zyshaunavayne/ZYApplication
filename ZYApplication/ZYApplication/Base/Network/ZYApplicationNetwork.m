@@ -20,7 +20,7 @@
         for (NSDictionary *obj in [ZYDetaileProcessing DPArchiveInfoWithKey:@"getMainAddress"]) {
             ZYIPManagerModel *model = [ZYIPManagerModel.alloc initWithDictionary:obj];
             if (model.select == 1) {
-//                ZYSingleton.shareSingleton.mainAddress = model.url;
+                ZYNetWorkSingleton.shareSingleton.mainAddress = model.url;
                 break;
             }
         }
@@ -41,7 +41,7 @@
         for (NSDictionary *obj in array) {
             ZYIPManagerModel *model = [ZYIPManagerModel.alloc initWithDictionary:obj];
             if (model.select == 1) {
-//                ZYSingleton.shareSingleton.mainAddress = model.url;
+                ZYNetWorkSingleton.shareSingleton.mainAddress = model.url;
                 break;
             }
         }
