@@ -2,12 +2,17 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>是否允许“酒吧”访问您的媒体资料库，以便保存图片？</string>
+	<string>是否允许“ZYApplication”访问您的媒体资料库，以便保存图片？</string>
 	<key>NSLocationAlwaysUsageDescription</key>
-	<string>是否允许“酒吧”访问您的位置，以便获取当前位置？</string>
+	<string>是否允许“ZYApplication”访问您的位置，以便获取当前位置？</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>是否允许“酒吧”访问您的位置，以便获取当前位置？</string>
+	<string>是否允许“ZYApplication”访问您的位置，以便获取当前位置？</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>

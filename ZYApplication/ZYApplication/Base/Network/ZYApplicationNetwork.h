@@ -7,7 +7,7 @@
 //
 
 #import "ZYNetWorkBaseRequestBlock.h"
-#import "ZYCG_INLINE.h"
+#import "ZYNetWork.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

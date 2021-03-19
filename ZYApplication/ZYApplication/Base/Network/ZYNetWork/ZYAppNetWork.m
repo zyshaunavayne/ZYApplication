@@ -211,9 +211,9 @@
 {
     if ([[ZYNetWorkSingleton shareSingleton].networkType isEqualToString:@"-1"]) {
         NSMutableDictionary *faileDic = NSMutableDictionary.alloc.init;
-        [faileDic setObject:@"未连接到网络" forKey:@"msg"];
-        [faileDic setObject:@"faile" forKey:@"state"];
-        [faileDic setObject:NSDictionary.dictionary forKey:@"data"];
+        [faileDic setObject:@"未连接到网络" forKey:@"result"];
+        [faileDic setObject:@(0) forKey:@"success"];
+        [faileDic setObject:NSDictionary.dictionary forKey:@"message"];
         self.responseData.responseStatus = ZYNetWorkResponseFaileAndNET;
         [self clearResponseDataConfig];
         self.responseData.faileNETResponse = faileDic;
@@ -267,8 +267,7 @@
 {
     AFHTTPRequestSerializer *request = AFHTTPRequestSerializer.serializer;
     request.timeoutInterval = 30;
-    [request setValue:@"ios" forHTTPHeaderField:@"platform"];
-    [request setValue:@"app-api-java" forHTTPHeaderField:@"type"];
+//    [request setValue:@"app-api-java" forHTTPHeaderField:@"type"];
     //配置请求内容格式
     request = [self setRequestContentTypeConfigWith:request];
     //配置Token
@@ -280,8 +279,7 @@
 {
     AFJSONRequestSerializer *request = [AFJSONRequestSerializer serializer];
     request.timeoutInterval = 30;
-    [request setValue:@"ios" forHTTPHeaderField:@"platform"];
-    [request setValue:@"app-api-java" forHTTPHeaderField:@"type"];
+//    [request setValue:@"app-api-java" forHTTPHeaderField:@"type"];
     //配置请求内容格式
     request = [self setRequestContentTypeConfigWith:request];
     //配置Token
@@ -503,10 +501,9 @@
     NSLog(@" 接口访问失败！\n 接口：%@ \n 入参：%@\n 访问方式：%ld \n 失败原因 == %@",self.requestUrl,self.parameters,self.requestType,error.description);
 
     NSMutableDictionary *faileDic = NSMutableDictionary.alloc.init;
-    [faileDic setObject:message ? message : @"访问失败！" forKey:@"msg"];
-    [faileDic setObject:@"fail" forKey:@"state"];
-    [faileDic setObject:NSDictionary.new forKey:@"data"];
-    [faileDic setObject:[error.userInfo objectForKey:@"code"] forKey:@"code"];
+    [faileDic setObject:message ? message : @"访问失败！" forKey:@"result"];
+    [faileDic setObject:@(0) forKey:@"success"];
+    [faileDic setObject:[error.userInfo objectForKey:@"message"] forKey:@"message"];
 
     dispatch_async(dispatch_get_main_queue(), ^{
         self.responseData.responseStatus = ZYNetWorkResponseFaileAndServer;
@@ -535,7 +532,7 @@
             [self successBlock:dic];
         }
     }else{
-        [self faileBlock:[NSError errorWithDomain:@"" code:-100 userInfo:dic] message:[dic objectForKey:@"msg"]];
+        [self faileBlock:[NSError errorWithDomain:@"" code:-100 userInfo:dic] message:[dic objectForKey:@"message"]];
     }
 }
 

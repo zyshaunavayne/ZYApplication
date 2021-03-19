@@ -18,6 +18,13 @@
 		2A60477C26008C810073C879 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A60477B26008C810073C879 /* LoginViewController.m */; };
 		2A60478326008E290073C879 /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A60478226008E290073C879 /* HomePageViewController.m */; };
 		2A60478726008E2F0073C879 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A60478626008E2F0073C879 /* MyViewController.m */; };
+		2A9E7A7B2604A4DB000AB878 /* ZYNetWorkSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9E7A732604A4DB000AB878 /* ZYNetWorkSingleton.m */; };
+		2A9E7A7C2604A4DB000AB878 /* ZYNetWorkBaseRequestBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9E7A752604A4DB000AB878 /* ZYNetWorkBaseRequestBlock.m */; };
+		2A9E7A7D2604A4DB000AB878 /* ZYNetWorkBaseMoreRequestBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9E7A762604A4DB000AB878 /* ZYNetWorkBaseMoreRequestBlock.m */; };
+		2A9E7A7E2604A4DB000AB878 /* ZYAppNetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9E7A772604A4DB000AB878 /* ZYAppNetWork.m */; };
+		2A9E7A7F2604A4DB000AB878 /* ZYNetWorkResponseData.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9E7A792604A4DB000AB878 /* ZYNetWorkResponseData.m */; };
+		2A9E7A802604A4DB000AB878 /* MMKVManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9E7A7A2604A4DB000AB878 /* MMKVManager.m */; };
+		2A9E7A862604A889000AB878 /* LoginRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9E7A852604A889000AB878 /* LoginRequest.m */; };
 		2AA790732600B4CB008D7E63 /* ZYApplicationNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA790722600B4CB008D7E63 /* ZYApplicationNetwork.m */; };
 		2AA790842600B6EB008D7E63 /* ZYFuctionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA790782600B6EB008D7E63 /* ZYFuctionModel.m */; };
 		2AA790852600B6EB008D7E63 /* ZYIPManagerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA7907A2600B6EB008D7E63 /* ZYIPManagerModel.m */; };
@@ -85,6 +92,21 @@
 		2A60478226008E290073C879 /* HomePageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomePageViewController.m; sourceTree = "<group>"; };
 		2A60478526008E2F0073C879 /* MyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
 		2A60478626008E2F0073C879 /* MyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
+		2A9E7A6E2604A4DB000AB878 /* ZYNetWorkBaseRequestBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYNetWorkBaseRequestBlock.h; sourceTree = "<group>"; };
+		2A9E7A6F2604A4DB000AB878 /* ZYNetWorkBaseMoreRequestBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYNetWorkBaseMoreRequestBlock.h; sourceTree = "<group>"; };
+		2A9E7A702604A4DB000AB878 /* ZYAppNetWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYAppNetWork.h; sourceTree = "<group>"; };
+		2A9E7A712604A4DB000AB878 /* MMKVManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMKVManager.h; sourceTree = "<group>"; };
+		2A9E7A722604A4DB000AB878 /* ZYNetWorkResponseData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYNetWorkResponseData.h; sourceTree = "<group>"; };
+		2A9E7A732604A4DB000AB878 /* ZYNetWorkSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYNetWorkSingleton.m; sourceTree = "<group>"; };
+		2A9E7A742604A4DB000AB878 /* ZYNetWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYNetWork.h; sourceTree = "<group>"; };
+		2A9E7A752604A4DB000AB878 /* ZYNetWorkBaseRequestBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYNetWorkBaseRequestBlock.m; sourceTree = "<group>"; };
+		2A9E7A762604A4DB000AB878 /* ZYNetWorkBaseMoreRequestBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYNetWorkBaseMoreRequestBlock.m; sourceTree = "<group>"; };
+		2A9E7A772604A4DB000AB878 /* ZYAppNetWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYAppNetWork.m; sourceTree = "<group>"; };
+		2A9E7A782604A4DB000AB878 /* ZYNetWorkSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYNetWorkSingleton.h; sourceTree = "<group>"; };
+		2A9E7A792604A4DB000AB878 /* ZYNetWorkResponseData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYNetWorkResponseData.m; sourceTree = "<group>"; };
+		2A9E7A7A2604A4DB000AB878 /* MMKVManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMKVManager.m; sourceTree = "<group>"; };
+		2A9E7A842604A889000AB878 /* LoginRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginRequest.h; sourceTree = "<group>"; };
+		2A9E7A852604A889000AB878 /* LoginRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginRequest.m; sourceTree = "<group>"; };
 		2AA790712600B4CB008D7E63 /* ZYApplicationNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYApplicationNetwork.h; sourceTree = "<group>"; };
 		2AA790722600B4CB008D7E63 /* ZYApplicationNetwork.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYApplicationNetwork.m; sourceTree = "<group>"; };
 		2AA790762600B6EB008D7E63 /* ZYIPManagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYIPManagerViewController.h; sourceTree = "<group>"; };
@@ -263,6 +285,7 @@
 			children = (
 				2A60477A26008C810073C879 /* LoginViewController.h */,
 				2A60477B26008C810073C879 /* LoginViewController.m */,
+				2A9E7A832604A863000AB878 /* Model */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -292,6 +315,35 @@
 				2A60478226008E290073C879 /* HomePageViewController.m */,
 			);
 			path = HomePage;
+			sourceTree = "<group>";
+		};
+		2A9E7A6D2604A4DB000AB878 /* ZYNetWork */ = {
+			isa = PBXGroup;
+			children = (
+				2A9E7A742604A4DB000AB878 /* ZYNetWork.h */,
+				2A9E7A702604A4DB000AB878 /* ZYAppNetWork.h */,
+				2A9E7A772604A4DB000AB878 /* ZYAppNetWork.m */,
+				2A9E7A712604A4DB000AB878 /* MMKVManager.h */,
+				2A9E7A7A2604A4DB000AB878 /* MMKVManager.m */,
+				2A9E7A782604A4DB000AB878 /* ZYNetWorkSingleton.h */,
+				2A9E7A732604A4DB000AB878 /* ZYNetWorkSingleton.m */,
+				2A9E7A6E2604A4DB000AB878 /* ZYNetWorkBaseRequestBlock.h */,
+				2A9E7A752604A4DB000AB878 /* ZYNetWorkBaseRequestBlock.m */,
+				2A9E7A6F2604A4DB000AB878 /* ZYNetWorkBaseMoreRequestBlock.h */,
+				2A9E7A762604A4DB000AB878 /* ZYNetWorkBaseMoreRequestBlock.m */,
+				2A9E7A722604A4DB000AB878 /* ZYNetWorkResponseData.h */,
+				2A9E7A792604A4DB000AB878 /* ZYNetWorkResponseData.m */,
+			);
+			path = ZYNetWork;
+			sourceTree = "<group>";
+		};
+		2A9E7A832604A863000AB878 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2A9E7A842604A889000AB878 /* LoginRequest.h */,
+				2A9E7A852604A889000AB878 /* LoginRequest.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		2AA790752600B6EB008D7E63 /* IPManager */ = {
@@ -421,6 +473,7 @@
 			children = (
 				2AA790712600B4CB008D7E63 /* ZYApplicationNetwork.h */,
 				2AA790722600B4CB008D7E63 /* ZYApplicationNetwork.m */,
+				2A9E7A6D2604A4DB000AB878 /* ZYNetWork */,
 				2AA790752600B6EB008D7E63 /* IPManager */,
 			);
 			path = Network;
@@ -810,6 +863,7 @@
 				2AA790862600B6EB008D7E63 /* ZYIPManagerCell.m in Sources */,
 				2AA790872600B6EB008D7E63 /* ZYSheetCell.m in Sources */,
 				2AE1220825FF86D1009C280F /* UILongPressGestureRecognizer+Runtime.m in Sources */,
+				2A9E7A862604A889000AB878 /* LoginRequest.m in Sources */,
 				2AE121D625FF8501009C280F /* NSArray+Runtime.m in Sources */,
 				2AE1223825FF940F009C280F /* FSActionSheet.m in Sources */,
 				2A604770260056390073C879 /* RootHomeTabBarController.m in Sources */,
@@ -821,13 +875,16 @@
 				2A60478326008E290073C879 /* HomePageViewController.m in Sources */,
 				2AE121E625FF8580009C280F /* UIImage+Runtime.m in Sources */,
 				2A29E33526036CC200ADABDD /* ZYSingleton.m in Sources */,
+				2A9E7A7B2604A4DB000AB878 /* ZYNetWorkSingleton.m in Sources */,
 				2AA790892600B6EB008D7E63 /* ZYIPManagerViewController.m in Sources */,
 				2AE1223025FF940F009C280F /* XLProgressView.m in Sources */,
 				2AE1223B25FF940F009C280F /* JXTAlertTools.m in Sources */,
+				2A9E7A7F2604A4DB000AB878 /* ZYNetWorkResponseData.m in Sources */,
 				2AE1223325FF940F009C280F /* XLZoomingScrollView.m in Sources */,
 				2A6047752600568F0073C879 /* NavBaseClassViewController.m in Sources */,
 				2AE121FD25FF8665009C280F /* NSMutableArray+Runtime.m in Sources */,
 				1874998E22B3A354003EEED4 /* main.m in Sources */,
+				2A9E7A7E2604A4DB000AB878 /* ZYAppNetWork.m in Sources */,
 				2AE1214425FF625B009C280F /* BaseClassView.m in Sources */,
 				2AE1215625FF62C0009C280F /* BaseClassCollectionViewCell.m in Sources */,
 				2A60478726008E2F0073C879 /* MyViewController.m in Sources */,
@@ -838,11 +895,14 @@
 				2AE121CE25FF8426009C280F /* NSString+Runtime.m in Sources */,
 				2AE1214D25FF6277009C280F /* BaseClassViewController.m in Sources */,
 				2AE1223A25FF940F009C280F /* FSActionSheetItem.m in Sources */,
+				2A9E7A7D2604A4DB000AB878 /* ZYNetWorkBaseMoreRequestBlock.m in Sources */,
 				2AA790952600BCE0008D7E63 /* UITextField+Runtime.m in Sources */,
 				2AE1223925FF940F009C280F /* FSActionSheetCell.m in Sources */,
 				2AA7908F2600B857008D7E63 /* ZYDetaileProcessing.m in Sources */,
+				2A9E7A7C2604A4DB000AB878 /* ZYNetWorkBaseRequestBlock.m in Sources */,
 				2AE1225625FFAD43009C280F /* WebBaseClassViewController.m in Sources */,
 				2AE1220F25FF88F3009C280F /* UIFont+Runtime.m in Sources */,
+				2A9E7A802604A4DB000AB878 /* MMKVManager.m in Sources */,
 				2AE1220225FF86B5009C280F /* UITapGestureRecognizer+Runtime.m in Sources */,
 				2AE121DA25FF8569009C280F /* UIButton+Runtime.m in Sources */,
 				2AE1215125FF62AA009C280F /* BaseClassTableViewCell.m in Sources */,

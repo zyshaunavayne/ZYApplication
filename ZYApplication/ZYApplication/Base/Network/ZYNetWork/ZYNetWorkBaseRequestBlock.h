@@ -8,6 +8,14 @@
 #import <Foundation/Foundation.h>
 #import "ZYAppNetWork.h"
 
+/// 服务器地址
+/// @param url 服务器地址拼接
+CG_INLINE NSString *_Nullable request_MainAddress(NSString *_Nullable url)
+{
+    return [NSString stringWithFormat:@"%@%@",ZYNetWorkSingleton.shareSingleton.mainAddress,url];
+}
+
+
 NS_ASSUME_NONNULL_BEGIN
 
 /// 请求成功回调

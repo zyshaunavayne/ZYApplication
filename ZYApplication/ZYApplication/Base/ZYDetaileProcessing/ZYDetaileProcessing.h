@@ -41,6 +41,10 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param key key description
 + (id)DPArchiveInfoWithKey:(id)key;
 
+/// 转为MD5字符串
+/// @param str 字符串
++ (NSString *)toMD5:(NSString *)str;
+
 @end
 
 NS_ASSUME_NONNULL_END

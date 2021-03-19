@@ -9,6 +9,7 @@
 #import "ZYApplicationNetwork.h"
 #import "ZYIPManagerModel.h"
 #import "ZYDetaileProcessing.h"
+#import "ZYNetWorkSingleton.h"
 
 @implementation ZYApplicationNetwork
 

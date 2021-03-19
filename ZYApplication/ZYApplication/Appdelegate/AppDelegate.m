@@ -12,8 +12,10 @@
 #import "LoginViewController.h"
 //root
 #import "RootHomeTabBarController.h"
+#import "LoginRequest.h"
 
 @interface AppDelegate ()
+@property (nonatomic, strong) LoginRequest *loginRequest;
 @end
 
 @implementation AppDelegate
@@ -31,7 +33,28 @@
     //设置根控制器
     [self gotoMainVC];
     
+    NSMutableDictionary *dic = NSMutableDictionary.alloc.init;
+    [dic setObject:@"zhangyu" forKey:@"username"];
+    [dic setObject:[ZYDetaileProcessing toMD5:@"1223456"] forKey:@"password"];
+    [dic setObject:@"auth=s" forKey:@"deviceId"];
+    [self.loginRequest beginLogin:dic];
+    
     return YES;
+}
+
+- (LoginRequest *)loginRequest
+{
+    if (!_loginRequest) {
+        _loginRequest = LoginRequest.alloc.init;
+        _loginRequest.successResponse = ^(ZYAppNetWork * _Nullable success) {
+            [SVProgressHUD showErrorWithStatus:[success.responseData.faileResponse objectForKey:@"result"]];
+        };
+        
+        _loginRequest.faileResponse = ^(ZYAppNetWork * _Nullable faile) {
+            [SVProgressHUD showErrorWithStatus:[faile.responseData.faileResponse objectForKey:@"result"]];
+        };
+    }
+    return _loginRequest;
 }
 
 + (AppDelegate *)shareInface

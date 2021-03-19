@@ -10,7 +10,7 @@
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
-+ (AppDelegate *) shareInface;
++ (AppDelegate *)shareInface;
 
 /// 去主页
 - (void)gotoMainVC;

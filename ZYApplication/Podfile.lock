@@ -34,23 +34,21 @@ PODS:
   - SDWebImage/Core (5.10.4)
   - SVProgressHUD (2.2.5)
   - TZImagePickerController (3.5.8)
-  - ZYApplicationNetWork (0.1.0):
-    - AFNetworking
-    - MMKV
   - ZYGCDManager (0.0.4)
 
 DEPENDENCIES:
+  - AFNetworking
   - Bugly
   - HXPhotoPicker (~> 3.1.9)
   - IQKeyboardManager
   - JPush
   - MJRefresh
+  - MMKV
   - SDAutoLayout
   - SDCycleScrollView
   - SDWebImage (~> 5.0)
   - SVProgressHUD
   - TZImagePickerController
-  - ZYApplicationNetWork
   - ZYGCDManager
 
 SPEC REPOS:
@@ -69,7 +67,6 @@ SPEC REPOS:
     - SDWebImage
     - SVProgressHUD
     - TZImagePickerController
-    - ZYApplicationNetWork
     - ZYGCDManager
 
 SPEC CHECKSUMS:
@@ -87,9 +84,8 @@ SPEC CHECKSUMS:
   SDWebImage: c666b97e1fa9c64b4909816a903322018f0a9c84
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   TZImagePickerController: 7fd9702897ef8c0b7c951e5463f4bcf398296f9e
-  ZYApplicationNetWork: ab7b41313a64c85f46c5b86af29001828ee741be
   ZYGCDManager: 515c526c8cf78289b6de71a0e412c2047a30bf72
 
-PODFILE CHECKSUM: 267dc9dd88a48b50baa70e056f8f1382f186b3ca
+PODFILE CHECKSUM: a946a37818abe6a3debc56258774607f5dc17375
 
 COCOAPODS: 1.10.0

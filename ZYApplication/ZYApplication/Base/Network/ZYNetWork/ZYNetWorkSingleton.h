@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// 上一次网络状态
 @property (nonatomic, strong) NSString *lastNetworkType;
 
-/// 经营帮App服务器主地址
+/// App服务器主地址
 @property (nonatomic, strong) NSString *mainAddress;
 
 /// 网络管理记录 任何VC消失都会重置当前的networkManager

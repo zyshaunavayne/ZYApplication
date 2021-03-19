@@ -263,11 +263,4 @@ CG_INLINE UIFont *fontsize_18()
     return [UIFont systemFontOfSize:18.0f];
 }
 
-/// 服务器地址
-/// @param url 服务器地址拼接
-CG_INLINE NSString *requestMainAddress(NSString *url)
-{
-    return [NSString stringWithFormat:@"%@%@",@"",url];
-}
-
 #endif /* ZYCG_INLINE_h */
